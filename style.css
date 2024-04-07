@@ -1,0 +1,75 @@
+:root {
+    --light-background: #f7f5f2;
+    --light-border-color: #5FE1D0;
+    --qode-main-color: #bfa37c;
+    --base-font-color: #0c1315;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.hysociety-ads.auction {
+    display: none;
+    box-sizing: border-box;
+
+    width: calc(100% - 120px);
+    max-width: 1200px;
+    height: calc(100vh - 60px);
+
+    margin: 20px auto;
+    padding: 40px 40px 20px;
+
+    background-color: var(--light-background);
+}
+
+.hysociety-ads.auction.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auction-media {
+    width: 100%;
+    height: 100%;
+
+    background-color: cadetblue;
+}
+
+.ads-buttons-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.ads-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 180px;
+    padding: 20px 30px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.ads-btn.close {
+    border: 1px solid var(--light-border-color);
+    color: var(--base-font-color);
+}
+
+.ads-btn.visit {
+    background-color: var(--qode-main-color);
+    color: #ffffff;
+}
