@@ -22,7 +22,7 @@ body {
 
     width: calc(100% - 120px);
     max-width: 1200px;
-    height: calc(100svh - 60px);
+    height: calc(95svh - 60px);
 
     margin: 20px auto;
     padding: 40px 40px 20px;
