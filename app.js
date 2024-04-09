@@ -17,3 +17,18 @@ function adsButtonClick() {
 adsButtons.forEach((adsButton) => {
     adsButton.addEventListener('click', adsButtonClick)
 })
+
+
+/* - - - - VOLUME CONTROL - - - - */
+
+const video = document.getElementById('videoPlayer');
+const muteButton = document.getElementById('muteButton');
+
+muteButton.addEventListener('click', function () {
+    video.muted = !video.muted;
+    if (video.muted) {
+        muteButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+    } else {
+        muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    }
+});
